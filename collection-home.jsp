@@ -181,7 +181,7 @@
 <%  }
     if(feedEnabled)
     { %>
-    <span class="pull-right">
+    <!-- <span class="pull-right">
     <%
     	String[] fmts = feedData.substring(5).split(",");
     	String icon = null;
@@ -209,7 +209,7 @@
     	} %>
     	</span><%
     }
-%>
+%> -->
         </form>
 
 <div class="row">
@@ -324,7 +324,7 @@
 
   <dspace:sidebar>
 <% if(admin_button || editor_button ) { %>
-                 <div class="panel panel-warning">
+                 <div class="panel panel-danger">
                  <div class="panel-heading"><fmt:message key="jsp.admintools"/>
                  	<span class="pull-right"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.collection-admin\")%>"><fmt:message key="jsp.adminhelp"/></dspace:popup></span>
                  </div>

@@ -350,7 +350,7 @@
     <dspace:sidebar>
     <% if(editor_button || add_button)  // edit button(s)
     { %>
-		 <div class="panel panel-warning">
+		 <div class="panel panel-danger">
              <div class="panel-heading">
              	<fmt:message key="jsp.admintools"/>
              	<span class="pull-right">
