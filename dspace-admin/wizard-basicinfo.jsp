@@ -116,15 +116,17 @@
 					<textarea class="form-control" name="provenance_description" rows="4" cols="50"></textarea>
 				</div>
 
-				<div class="help-block">
-                	<%-- Choose a JPEG or GIF logo for the collection home page.  Should be quite small. --%>
-	                <fmt:message key="jsp.dspace-admin.wizard-basicinfo.choose"/>
-				</div>
-				<div class="form-group">
-					<%-- <td><p class="submitFormLabel">Provenance:</p></td> --%>
-					<label for="file"><fmt:message key="jsp.dspace-admin.wizard-basicinfo.logo"/></label>
-					<input class="form-control" type="file" size="40" name="file"/>
-				</div>                	
+				<div style="display: none;">
+					<div class="help-block">
+						<%-- Choose a JPEG or GIF logo for the collection home page.  Should be quite small. --%>
+						<fmt:message key="jsp.dspace-admin.wizard-basicinfo.choose"/>
+					</div>
+					<div class="form-group">
+						<%-- <td><p class="submitFormLabel">Provenance:</p></td> --%>
+						<label for="file"><fmt:message key="jsp.dspace-admin.wizard-basicinfo.logo"/></label>
+						<input class="form-control" type="file" size="40" name="file"/>
+					</div>  
+				</div>              	
 	
 	<div class="col-md-6 pull-right btn-group">
 		<%-- Hidden fields needed for servlet to know which collection and page to deal with --%>

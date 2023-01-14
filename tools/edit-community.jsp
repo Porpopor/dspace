@@ -171,7 +171,7 @@
 <%-- ===========================================================
      Logo
      =========================================================== --%>
-            <div class="row">
+            <div class="row" style="display: none;">
                 <label class="col-md-3"><fmt:message key="jsp.tools.edit-community.form.label6"/></label>
                     <div class="col-md-9">
 

@@ -74,7 +74,32 @@
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
 
 	<div class="jumbotron">
-        <%= topNews %>
+		<div class="container">
+						<div class="row" style="text-align: center;">
+							<div class="col-md-12">
+								<h3>ค้นหา ปริญญานิพนธ์</h3>
+							</div>
+							<div class="col-md-12">
+								<%-- Search Box --%>
+						<form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form">
+							<div class="form-group">
+							<input type="text" class="form-control" placeholder="ปริญญานิพนธ์"/>
+							</div>
+							<button type="submit" class="btn btn-primary">ค้นหา <span class="glyphicon glyphicon-search"></span></button>
+					<%--               <br/><a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a>
+					<%
+								if (ConfigurationManager.getBooleanProperty("webui.controlledvocabulary.enable"))
+								{
+					%>        
+								<br/><a href="<%= request.getContextPath() %>/subject-search"><fmt:message key="jsp.layout.navbar-default.subjectsearch"/></a>
+					<%
+								}
+					%> --%>
+						</form>
+							</div>
+						</div>
+		</div>
+        <!-- <%= topNews %> -->
 	</div>
 
 <div class="row">
@@ -83,7 +108,7 @@ if (submissions != null && submissions.count() > 0)
 {
 %>
         <div class="col-md-8">
-        <div class="panel panel-primary">        
+        <div class="panel panel-danger">        
         <div id="recent-submissions-carousel" class="panel-heading carousel slide">
           <h3><fmt:message key="jsp.collection-home.recentsub"/>
               <%

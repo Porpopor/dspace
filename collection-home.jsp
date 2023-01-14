@@ -141,7 +141,7 @@
   <p class="copyrightText"><%= copyright %></p>
   
   <%-- Browse --%>
-  <div class="panel panel-primary">
+  <div class="panel panel-danger">
   	<div class="panel-heading">
         <fmt:message key="jsp.general.browse"/>
 	</div>

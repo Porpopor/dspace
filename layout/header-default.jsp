@@ -101,6 +101,13 @@
   <script src="<%= request.getContextPath() %>/static/js/html5shiv.js"></script>
   <script src="<%= request.getContextPath() %>/static/js/respond.min.js"></script>
 <![endif]-->
+<style>
+    .img-responsive {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+</style>
     </head>
 
     <%-- HACK: leftmargin, topmargin: for non-CSS compliant Microsoft IE browser --%>
@@ -132,9 +139,9 @@
 <div class="container banner">
     <div class="row">
         <div class="col-md-9 brand">
-            <img class="pull-right" src="<%= request.getContextPath() %>/image/header.jpg" alt="DSpace logo" />
+            <img class="img-responsive" src="<%= request.getContextPath() %>/image/header.jpg" alt="DSpace logo" />
         </div>
-        <div class="col-md-3"><img class="pull-right" src="<%= request.getContextPath() %>/image/logo.jpg" alt="DSpace logo" />
+        <div class="col-md-3" style="text-align: center;"><img src="<%= request.getContextPath() %>/image/logo.jpg" alt="DSpace logo" />
         </div>
     </div>
 </div>

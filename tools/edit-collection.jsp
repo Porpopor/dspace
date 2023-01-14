@@ -236,7 +236,7 @@
 <%-- ===========================================================
      Logo
      =========================================================== --%>
-            <div class="row">
+            <div class="row" style="display: none;">
                 <label class="col-md-3" for=""><fmt:message key="jsp.tools.edit-collection.form.label8"/></label>
                 <div class="col-md-9">
 <%  if (logo != null) { %>
