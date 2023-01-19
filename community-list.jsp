@@ -136,7 +136,7 @@
     {
 %>     
 <dspace:sidebar>
-			<div class="panel panel-warning">
+			<div class="panel panel-danger">
 			<div class="panel-heading">
 				<fmt:message key="jsp.admintools"/>
 				<span class="pull-right">

@@ -189,9 +189,9 @@ if (submissions != null && submissions.count() > 0)
 <%
 }
 %>
-<div class="col-md-4">
+<!-- <div class="col-md-4">
     <%= sideNews %>
-</div>
+</div> -->
 </div>
 <div class="container row">
 <%
