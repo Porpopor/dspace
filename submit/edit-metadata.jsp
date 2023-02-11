@@ -298,8 +298,7 @@
             conf = unknownConfidence;
          }
          
-         sb.append("<span class=\"col-md-5\"><input placeholder=\"")
-           .append(Utils.addEntities(LocaleSupport.getLocalizedMessage(pageContext, "jsp.submit.edit-metadata.lastname")))
+         sb.append("<span class=\"col-md-5\"><input placeholder=\"First name")
            .append("\" class=\"form-control\" type=\"text\" name=\"")
            .append(last.toString())
            .append("\" size=\"23\" ");
@@ -309,8 +308,7 @@
          }
          sb.append("value=\"")
            .append(dpn.getLastName().replaceAll("\"", "&quot;")) // Encode "
-                   .append("\"/></span><span class=\"col-md-5\"><input placeholder=\"")
-                   .append(Utils.addEntities(LocaleSupport.getLocalizedMessage(pageContext, "jsp.submit.edit-metadata.firstname")))
+                   .append("\"/></span><span class=\"col-md-5\"><input placeholder=\"Last name")
                    .append("\" class=\"form-control\" type=\"text\" name=\"")
                    .append(first.toString())
            .append("\" size=\"23\" ");
@@ -387,7 +385,7 @@
          sb.append("<div class=\"row col-md-12\"><div class=\"input-group col-md-10\"><div class=\"row\">")
 			.append("<span class=\"input-group col-md-6\"><span class=\"input-group-addon\">")
          	.append(LocaleSupport.getLocalizedMessage(pageContext, "jsp.submit.edit-metadata.month"))
-            .append("</span><select class=\"form-control\" name=\"")
+            .append("</span><select class=\"form-control\" name=\"asdasd")
             .append(fieldName)
             .append("_month");
          if (repeatable)
